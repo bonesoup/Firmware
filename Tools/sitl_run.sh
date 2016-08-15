@@ -83,7 +83,7 @@ then
 	then
 		# Set the plugin path so Gazebo finds our model and sim
 		source /usr/share/gazebo/setup.sh
-		source $src_path/integrationtests/setup_gazebo_ros.bash ${src_path} ${build_path}
+		source $src_path/integrationtests/setup_gazebo.bash ${src_path} ${build_path}
 		gzserver --verbose worlds/${model}.world &
 		SIM_PID=`echo $!`
 
